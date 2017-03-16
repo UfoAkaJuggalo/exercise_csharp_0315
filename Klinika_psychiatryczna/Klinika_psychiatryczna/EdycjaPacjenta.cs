@@ -22,7 +22,7 @@ namespace Klinika_psychiatryczna
         {
             txtName.Text = viewModel.PName;
             txtSurname.Text = viewModel.PLastName;
-            txtDOB.Text = viewModel.PDOB;
+            dateDOB.Value = viewModel.PDOB;
             txtCity.Text = viewModel.PCity;
         }
 
@@ -36,14 +36,17 @@ namespace Klinika_psychiatryczna
         {
             viewModel.PName = txtName.Text;
             viewModel.PLastName = txtSurname.Text;
-            viewModel.PDOB = txtDOB.Text;
+            viewModel.PDOB = dateDOB.Value;
             viewModel.PCity = txtCity.Text;
             Close();
         }
 
         private void EdycjaPacjenta_Shown(object sender, EventArgs e)
         {
-            UpdateForm();
+            if (viewModel.PDOB.Year > 1800)
+            {
+                UpdateForm();
+            }
         }
     }
 }

@@ -36,10 +36,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtSurname = new System.Windows.Forms.TextBox();
-            this.txtDOB = new System.Windows.Forms.TextBox();
             this.txtCity = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dateDOB = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,10 +67,10 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.txtName, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtSurname, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txtDOB, 3, 5);
             this.tableLayoutPanel1.Controls.Add(this.txtCity, 3, 7);
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.button2, 3, 9);
+            this.tableLayoutPanel1.Controls.Add(this.dateDOB, 3, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -146,14 +146,6 @@
             this.txtSurname.Size = new System.Drawing.Size(123, 20);
             this.txtSurname.TabIndex = 5;
             // 
-            // txtDOB
-            // 
-            this.txtDOB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDOB.Location = new System.Drawing.Point(239, 157);
-            this.txtDOB.Name = "txtDOB";
-            this.txtDOB.Size = new System.Drawing.Size(123, 20);
-            this.txtDOB.TabIndex = 6;
-            // 
             // txtCity
             // 
             this.txtCity.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -184,6 +176,14 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // dateDOB
+            // 
+            this.dateDOB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateDOB.Location = new System.Drawing.Point(239, 157);
+            this.dateDOB.Name = "dateDOB";
+            this.dateDOB.Size = new System.Drawing.Size(123, 20);
+            this.dateDOB.TabIndex = 10;
+            // 
             // EdycjaPacjenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -210,9 +210,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtSurname;
-        private System.Windows.Forms.TextBox txtDOB;
         private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DateTimePicker dateDOB;
     }
 }

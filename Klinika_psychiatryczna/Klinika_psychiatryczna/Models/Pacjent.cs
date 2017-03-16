@@ -10,7 +10,7 @@ namespace Klinika_psychiatryczna.Models
     {
         public string PName { get; set; }
         public string PLastName { get; set; }
-        public string PDOB { get; set; }
+        public System.DateTime PDOB { get; set; }
         public string PCity { get; set; }
     }
 }

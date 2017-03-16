@@ -25,7 +25,7 @@ namespace Klinika_psychiatryczna
             EdycjaPacjenta dialog = new EdycjaPacjenta();
             dialog.viewModel.PName = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
             dialog.viewModel.PLastName = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            dialog.viewModel.PDOB = this.dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            dialog.viewModel.PDOB = Convert.ToDateTime(this.dataGridView1.CurrentRow.Cells[2].Value);
             dialog.viewModel.PCity = dataGridView1.CurrentRow.Cells[3].Value.ToString();
             dialog.ShowDialog();
             if (dialog.viewModel != null)
