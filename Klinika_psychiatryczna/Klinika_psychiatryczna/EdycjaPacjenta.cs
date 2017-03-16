@@ -13,17 +13,37 @@ namespace Klinika_psychiatryczna
 {
     public partial class EdycjaPacjenta : Form
     {
+        public PacjentDetailsFormModel viewModel = new PacjentDetailsFormModel();
         public EdycjaPacjenta()
         {
             InitializeComponent();
         }
-        public EdycjaPacjenta(PacjentDetailsFormModel pacjentData)
+        public void UpdateForm()
         {
-            this.txtName.Text = pacjentData.PName;
-            this.txtSurname.Text = pacjentData.PLastName;
-            this.txtDOB.Text = pacjentData.PDOB;
-            this.txtCity.Text = pacjentData.PCity;
-            InitializeComponent();
+            txtName.Text = viewModel.PName;
+            txtSurname.Text = viewModel.PLastName;
+            txtDOB.Text = viewModel.PDOB;
+            txtCity.Text = viewModel.PCity;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            viewModel = null;
+            Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            viewModel.PName = txtName.Text;
+            viewModel.PLastName = txtSurname.Text;
+            viewModel.PDOB = txtDOB.Text;
+            viewModel.PCity = txtCity.Text;
+            Close();
+        }
+
+        private void EdycjaPacjenta_Shown(object sender, EventArgs e)
+        {
+            UpdateForm();
         }
     }
 }

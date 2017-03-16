@@ -104,6 +104,7 @@
             this.buttAdd.TabIndex = 0;
             this.buttAdd.Text = "Dodaj";
             this.buttAdd.UseVisualStyleBackColor = true;
+            this.buttAdd.Click += new System.EventHandler(this.buttAdd_Click);
             // 
             // buttEdit
             // 
@@ -125,6 +126,7 @@
             this.buttDel.TabIndex = 2;
             this.buttDel.Text = "Skasuj";
             this.buttDel.UseVisualStyleBackColor = true;
+            this.buttDel.Click += new System.EventHandler(this.buttDel_Click);
             // 
             // dataGridView1
             // 
