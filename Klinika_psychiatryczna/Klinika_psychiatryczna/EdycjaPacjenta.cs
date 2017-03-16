@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Klinika_psychiatryczna.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,14 @@ namespace Klinika_psychiatryczna
     {
         public EdycjaPacjenta()
         {
+            InitializeComponent();
+        }
+        public EdycjaPacjenta(PacjentDetailsFormModel pacjentData)
+        {
+            this.txtName.Text = pacjentData.PName;
+            this.txtSurname.Text = pacjentData.PLastName;
+            this.txtDOB.Text = pacjentData.PDOB;
+            this.txtCity.Text = pacjentData.PCity;
             InitializeComponent();
         }
     }

@@ -34,10 +34,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtSurname = new System.Windows.Forms.TextBox();
+            this.txtDOB = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -65,10 +65,10 @@
             this.tableLayoutPanel1.Controls.Add(this.label2, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 3, 7);
+            this.tableLayoutPanel1.Controls.Add(this.txtName, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtSurname, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtDOB, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.txtCity, 3, 7);
             this.tableLayoutPanel1.Controls.Add(this.button1, 1, 9);
             this.tableLayoutPanel1.Controls.Add(this.button2, 3, 9);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -130,37 +130,37 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Adres";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(239, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtName.Location = new System.Drawing.Point(239, 47);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(123, 20);
+            this.txtName.TabIndex = 4;
             // 
-            // textBox2
+            // txtSurname
             // 
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Location = new System.Drawing.Point(239, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(123, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtSurname.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSurname.Location = new System.Drawing.Point(239, 102);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Size = new System.Drawing.Size(123, 20);
+            this.txtSurname.TabIndex = 5;
             // 
-            // textBox3
+            // txtDOB
             // 
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Location = new System.Drawing.Point(239, 157);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(123, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtDOB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDOB.Location = new System.Drawing.Point(239, 157);
+            this.txtDOB.Name = "txtDOB";
+            this.txtDOB.Size = new System.Drawing.Size(123, 20);
+            this.txtDOB.TabIndex = 6;
             // 
-            // textBox4
+            // txtCity
             // 
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Location = new System.Drawing.Point(239, 212);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(123, 20);
-            this.textBox4.TabIndex = 7;
+            this.txtCity.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtCity.Location = new System.Drawing.Point(239, 212);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(123, 20);
+            this.txtCity.TabIndex = 7;
             // 
             // button1
             // 
@@ -205,10 +205,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtSurname;
+        private System.Windows.Forms.TextBox txtDOB;
+        private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }
