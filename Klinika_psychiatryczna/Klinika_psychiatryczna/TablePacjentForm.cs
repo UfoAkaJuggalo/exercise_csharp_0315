@@ -19,5 +19,10 @@ namespace Klinika_psychiatryczna
             InitializeComponent();
             bsPacjenci.DataSource = viewModel.Pacjenci;
         }
+
+        private void buttEdit_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this.dataGridView1.CurrentRow.Cells[0].Value.ToString() + " " + this.dataGridView1.CurrentRow.Cells[1].Value.ToString());
+        }
     }
 }

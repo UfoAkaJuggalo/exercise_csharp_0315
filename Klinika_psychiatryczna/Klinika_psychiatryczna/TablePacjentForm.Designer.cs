@@ -36,11 +36,11 @@
             this.buttEdit = new System.Windows.Forms.Button();
             this.buttDel = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bsPacjenci = new System.Windows.Forms.BindingSource(this.components);
             this.pNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pLastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pDOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pCityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bsPacjenci = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -114,6 +114,7 @@
             this.buttEdit.TabIndex = 1;
             this.buttEdit.Text = "Edytuj";
             this.buttEdit.UseVisualStyleBackColor = true;
+            this.buttEdit.Click += new System.EventHandler(this.buttEdit_Click);
             // 
             // buttDel
             // 
@@ -139,14 +140,12 @@
             this.dataGridView1.DataSource = this.bsPacjenci;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(531, 379);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // bsPacjenci
-            // 
-            this.bsPacjenci.DataSource = typeof(Klinika_psychiatryczna.Models.Pacjent);
             // 
             // pNameDataGridViewTextBoxColumn
             // 
@@ -175,6 +174,10 @@
             this.pCityDataGridViewTextBoxColumn.HeaderText = "PCity";
             this.pCityDataGridViewTextBoxColumn.Name = "pCityDataGridViewTextBoxColumn";
             this.pCityDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bsPacjenci
+            // 
+            this.bsPacjenci.DataSource = typeof(Klinika_psychiatryczna.Models.Pacjent);
             // 
             // TablePacjentForm
             // 

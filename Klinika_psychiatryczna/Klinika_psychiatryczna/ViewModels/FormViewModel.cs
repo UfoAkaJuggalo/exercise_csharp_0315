@@ -13,7 +13,8 @@ namespace Klinika_psychiatryczna.ViewModels
         {
             Pacjenci = new List<Pacjent>()
             {
-                new Pacjent {PName = "Stefan", PLastName = "12", PDOB = "12-12-1976", PCity = "23" }
+                new Pacjent {PName = "Stefan", PLastName = "12", PDOB = "12-12-1976", PCity = "23" },
+                new Pacjent {PName = "Josef", PLastName = "Balon", PDOB = "12-12-1986", PCity = "Wonchock" }
             };
         }
         public List<Pacjent> Pacjenci { get; }
