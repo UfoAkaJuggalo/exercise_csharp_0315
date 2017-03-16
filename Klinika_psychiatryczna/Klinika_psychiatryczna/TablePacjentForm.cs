@@ -22,22 +22,22 @@ namespace Klinika_psychiatryczna
 
         private void buttEdit_Click(object sender, EventArgs e)
         {
-            EdycjaPacjenta dialog = new EdycjaPacjenta();
-            dialog.viewModel.PName = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            dialog.viewModel.PLastName = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            dialog.viewModel.PDOB = Convert.ToDateTime(this.dataGridView1.CurrentRow.Cells[2].Value);
-            dialog.viewModel.PCity = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            dialog.ShowDialog();
-            if (dialog.viewModel != null)
-            {
-                viewModel.Pacjenci[dataGridView1.CurrentCell.RowIndex].PName = dialog.viewModel.PName;
-                viewModel.Pacjenci[dataGridView1.CurrentCell.RowIndex].PLastName = dialog.viewModel.PLastName;
-                viewModel.Pacjenci[dataGridView1.CurrentCell.RowIndex].PDOB = dialog.viewModel.PDOB;
-                viewModel.Pacjenci[dataGridView1.CurrentCell.RowIndex].PCity = dialog.viewModel.PCity;
-                bsPacjenci.DataSource = null;
-                bsPacjenci.DataSource = viewModel.Pacjenci;
+                EdycjaPacjenta dialog = new EdycjaPacjenta();
+                dialog.viewModel.PName = this.dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                dialog.viewModel.PLastName = this.dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                dialog.viewModel.PDOB = Convert.ToDateTime(this.dataGridView1.CurrentRow.Cells[2].Value);
+                dialog.viewModel.PCity = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                dialog.ShowDialog();
+                if (dialog.viewModel != null)
+                {
+                    viewModel.Pacjenci[dataGridView1.CurrentCell.RowIndex].PName = dialog.viewModel.PName;
+                    viewModel.Pacjenci[dataGridView1.CurrentCell.RowIndex].PLastName = dialog.viewModel.PLastName;
+                    viewModel.Pacjenci[dataGridView1.CurrentCell.RowIndex].PDOB = dialog.viewModel.PDOB;
+                    viewModel.Pacjenci[dataGridView1.CurrentCell.RowIndex].PCity = dialog.viewModel.PCity;
+                    bsPacjenci.DataSource = null;
+                    bsPacjenci.DataSource = viewModel.Pacjenci;
 
-            }
+                }
         }
 
         private void buttAdd_Click(object sender, EventArgs e)

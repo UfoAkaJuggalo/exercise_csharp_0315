@@ -36,11 +36,12 @@
             this.buttEdit = new System.Windows.Forms.Button();
             this.buttDel = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bsPacjenci = new System.Windows.Forms.BindingSource(this.components);
             this.pNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pLastNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pDOBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Wiek = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pCityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bsPacjenci = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -138,6 +139,7 @@
             this.pNameDataGridViewTextBoxColumn,
             this.pLastNameDataGridViewTextBoxColumn,
             this.pDOBDataGridViewTextBoxColumn,
+            this.Wiek,
             this.pCityDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.bsPacjenci;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -149,37 +151,43 @@
             this.dataGridView1.Size = new System.Drawing.Size(531, 379);
             this.dataGridView1.TabIndex = 1;
             // 
+            // bsPacjenci
+            // 
+            this.bsPacjenci.DataSource = typeof(Klinika_psychiatryczna.Models.Pacjent);
+            // 
             // pNameDataGridViewTextBoxColumn
             // 
             this.pNameDataGridViewTextBoxColumn.DataPropertyName = "PName";
-            this.pNameDataGridViewTextBoxColumn.HeaderText = "PName";
+            this.pNameDataGridViewTextBoxColumn.HeaderText = "Imie";
             this.pNameDataGridViewTextBoxColumn.Name = "pNameDataGridViewTextBoxColumn";
             this.pNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // pLastNameDataGridViewTextBoxColumn
             // 
             this.pLastNameDataGridViewTextBoxColumn.DataPropertyName = "PLastName";
-            this.pLastNameDataGridViewTextBoxColumn.HeaderText = "PLastName";
+            this.pLastNameDataGridViewTextBoxColumn.HeaderText = "Nazwisko";
             this.pLastNameDataGridViewTextBoxColumn.Name = "pLastNameDataGridViewTextBoxColumn";
             this.pLastNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // pDOBDataGridViewTextBoxColumn
             // 
             this.pDOBDataGridViewTextBoxColumn.DataPropertyName = "PDOB";
-            this.pDOBDataGridViewTextBoxColumn.HeaderText = "PDOB";
+            this.pDOBDataGridViewTextBoxColumn.HeaderText = "Data urodzin";
             this.pDOBDataGridViewTextBoxColumn.Name = "pDOBDataGridViewTextBoxColumn";
             this.pDOBDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Wiek
+            // 
+            this.Wiek.HeaderText = "Wiek";
+            this.Wiek.Name = "Wiek";
+            this.Wiek.ReadOnly = true;
             // 
             // pCityDataGridViewTextBoxColumn
             // 
             this.pCityDataGridViewTextBoxColumn.DataPropertyName = "PCity";
-            this.pCityDataGridViewTextBoxColumn.HeaderText = "PCity";
+            this.pCityDataGridViewTextBoxColumn.HeaderText = "Miasto";
             this.pCityDataGridViewTextBoxColumn.Name = "pCityDataGridViewTextBoxColumn";
             this.pCityDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // bsPacjenci
-            // 
-            this.bsPacjenci.DataSource = typeof(Klinika_psychiatryczna.Models.Pacjent);
             // 
             // TablePacjentForm
             // 
@@ -211,6 +219,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn pNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pLastNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pDOBDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Wiek;
         private System.Windows.Forms.DataGridViewTextBoxColumn pCityDataGridViewTextBoxColumn;
     }
 }

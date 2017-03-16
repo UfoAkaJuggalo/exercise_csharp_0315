@@ -132,6 +132,7 @@
             // 
             // txtName
             // 
+            this.txtName.BackColor = System.Drawing.SystemColors.Window;
             this.txtName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtName.Location = new System.Drawing.Point(239, 47);
             this.txtName.Name = "txtName";
@@ -140,6 +141,7 @@
             // 
             // txtSurname
             // 
+            this.txtSurname.BackColor = System.Drawing.SystemColors.Window;
             this.txtSurname.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtSurname.Location = new System.Drawing.Point(239, 102);
             this.txtSurname.Name = "txtSurname";

@@ -18,14 +18,47 @@ namespace Klinika_psychiatryczna
         {
             InitializeComponent();
         }
-        public void UpdateForm()
+        private void UpdateForm()
         {
             txtName.Text = viewModel.PName;
             txtSurname.Text = viewModel.PLastName;
             dateDOB.Value = viewModel.PDOB;
             txtCity.Text = viewModel.PCity;
         }
-
+        private bool ValidateForm()
+        {
+            bool isOK = true;
+            if (txtName.Text == "")
+            {
+                txtName.BackColor = Color.LightCoral;
+                isOK = false;
+            }
+            else { txtName.BackColor = Color.White;
+            }
+            if (txtSurname.Text == "")
+            {
+                txtSurname.BackColor = Color.LightCoral;
+                isOK = false;
+            }
+            else
+            {
+                txtSurname.BackColor = Color.White;
+            }
+            if (txtCity.Text == "")
+            {
+                txtCity.BackColor = Color.LightCoral;
+                isOK = false;
+            }
+            else
+            {
+                txtCity.BackColor = Color.White;
+            }
+            if (!isOK)
+            {
+                MessageBox.Show("Uzupełnij zaznaczone pola.", "Uzupełnij pola.", MessageBoxButtons.OK,  MessageBoxIcon.Error);
+            }
+            return isOK;
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             viewModel = null;
@@ -34,11 +67,14 @@ namespace Klinika_psychiatryczna
 
         private void button1_Click(object sender, EventArgs e)
         {
-            viewModel.PName = txtName.Text;
-            viewModel.PLastName = txtSurname.Text;
-            viewModel.PDOB = dateDOB.Value;
-            viewModel.PCity = txtCity.Text;
-            Close();
+            if (ValidateForm())
+            {
+                viewModel.PName = txtName.Text;
+                viewModel.PLastName = txtSurname.Text;
+                viewModel.PDOB = dateDOB.Value;
+                viewModel.PCity = txtCity.Text;
+                Close();
+            }
         }
 
         private void EdycjaPacjenta_Shown(object sender, EventArgs e)
