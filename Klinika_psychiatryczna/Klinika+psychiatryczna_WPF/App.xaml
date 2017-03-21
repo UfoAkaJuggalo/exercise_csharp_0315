@@ -1,0 +1,9 @@
+﻿<Application x:Class="Klinika_psychiatryczna_WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Klinika_psychiatryczna_WPF"
+             StartupUri="TablePacjentForm.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
