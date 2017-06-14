@@ -1,4 +1,4 @@
-# exercise_csharp_0315
+# exercise_csharp_WinForms-CRUD
 Small exercise in c# with winforms and data bindings
 
 Simple CRUD application in C# using WinForms (and WPF in future).
